@@ -8,11 +8,13 @@ jobs:
       - run: make setup
   test:
     runs-on: ubuntu-latest
+    needs: setup
     steps:
       - uses: actions/checkout@v2
       - run: make test
   lint:
     runs-on: ubuntu-latest
+    needs: setup
     steps:
       - uses: actions/checkout@v2
       - run: make lint
