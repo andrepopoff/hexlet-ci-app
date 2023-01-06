@@ -35,5 +35,5 @@ This repository is created and maintained by the team and the community of Hexle
 
 See most active contributors on [hexlet-friends](https://friends.hexlet.io/).
 
-![test workflow](https://github.com/andrepopoff/hexlet-ci-app/actions/workflows/test.yml/badge.svg)
+![test workflow](https://github.com/andrepopoff/hexlet-ci-app/actions/workflows/test.yml)
 
