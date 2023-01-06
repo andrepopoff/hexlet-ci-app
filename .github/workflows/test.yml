@@ -5,17 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v2
+      - name: setup
       - run: make setup
-  test:
-    runs-on: ubuntu-latest
-    needs: setup
-    steps:
-      - uses: actions/checkout@v2
+      - name: test
       - run: make test
-  lint:
-    runs-on: ubuntu-latest
-    needs: setup
-    steps:
-      - uses: actions/checkout@v2
+      - name: lint
       - run: make lint
 
